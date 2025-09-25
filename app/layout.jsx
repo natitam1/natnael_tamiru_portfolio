@@ -1,5 +1,7 @@
 import { Sometype_Mono } from "next/font/google";
 import "./globals.css";
+// Components
+import MainNav from "@/components/MainNav";
 
 const sometypeMono = Sometype_Mono({
   variable: "--font-sometypeMono",
@@ -14,7 +16,12 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${sometypeMono.variable} antialiased`}>{children}</body>
+      <body className={`${sometypeMono.variable} antialiased`}>
+        <div className="hidden 2xl:flex w-[285px] h-screen bg-secondary">
+          <MainNav />
+        </div>
+        <div>{children}</div>
+      </body>
     </html>
   );
 }

@@ -44,3 +44,25 @@ body {
 .container {
   @apply px-[15px];
 }
+
+/* btns */
+.btn {
+  @apply font-medium h-[56px] flex items-center justify-center rounded-full transition-all cursor-pointer;
+}
+
+.btn-sm {
+  @apply font-semibold min-w-[168px] px-5 text-[15px];
+}
+
+.btn-lg {
+  @apply min-w-[200x] px-6;
+}
+
+/* Btn color */
+.btn-tertiary {
+  @apply bg-tertiary hover:bg-tertiary-hover;
+}
+
+.btn-white {
+  @apply bg-white hover:bg-white/90 text-primary;
+}

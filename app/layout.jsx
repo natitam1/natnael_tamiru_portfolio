@@ -17,10 +17,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${sometypeMono.variable} antialiased`}>
+        {/* main navbar */}
         <div className="hidden 2xl:flex w-[285px] h-screen bg-secondary">
           <MainNav />
         </div>
-        <div>{children}</div>
+        <div className="w-full max-w-[1130px] px-[15px] mx-auto bg-pink-50/10">
+          <header>Header</header>
+          <div>{children}</div>
+        </div>
       </body>
     </html>
   );

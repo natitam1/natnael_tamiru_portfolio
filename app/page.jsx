@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { easeIn, easeInOut, motion } from "framer-motion";
 
@@ -9,7 +10,9 @@ const Home = () => {
         opacity: 1,
         transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
       }}
-    ></motion.section>
+    >
+      home
+    </motion.section>
   );
 };
 

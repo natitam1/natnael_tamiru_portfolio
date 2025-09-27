@@ -1,4 +1,6 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const links = [
@@ -29,13 +31,18 @@ const links = [
 ];
 
 const NavLinks = ({ containerStyles }) => {
+  const pathname = usePathname();
   return (
     <ul className={containerStyles}>
-      {links.map((link, index) => (
-        <Link href={link.path} key={index}>
-          {link.name}
-        </Link>
-      ))}
+      {links.map((link, index) => {
+        // Determine if the current link matches the active route
+        const isActive = pathname === link.path;
+        return (
+          <Link href={link.path} key={index}>
+            {link.name}
+          </Link>
+        );
+      })}
     </ul>
   );
 };

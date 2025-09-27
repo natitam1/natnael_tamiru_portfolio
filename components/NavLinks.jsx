@@ -48,7 +48,7 @@ const NavLinks = ({ containerStyles }) => {
             href={link.path}
             key={index}
           >
-            <span className="relative z-10"> {link.name}</span>
+            <span className="relative z-1"> {link.name}</span>
           </Link>
         );
       })}

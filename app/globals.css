@@ -1,1 +1,96 @@
 @import "tailwindcss";
+
+/* Navbar Styles */
+.navbar {
+  @apply fixed top-4 left-4 right-4 z-50;
+}
+
+.navbar-container {
+  @apply w-fit mx-auto px-6 sm:px-8;
+  @apply flex items-center justify-center gap-4 h-12;
+  @apply bg-gradient-to-r from-[#fcaf0b]/10 via-[#fcaf0b]/15 to-[#fcaf0b]/10;
+  @apply backdrop-blur-md border border-[#fcaf0b]/20;
+  @apply rounded-3xl shadow-lg;
+  @apply relative;
+}
+
+.navbar-logo {
+  @apply text-xl font-bold text-gray-900 hover:text-[#fcaf0b] transition-colors duration-300;
+  @apply flex items-center flex-shrink-0;
+}
+
+.navbar-menu-desktop {
+  @apply hidden md:flex items-center justify-center space-x-2;
+  @apply h-full;
+}
+
+.navbar-link {
+  @apply px-5 py-1.5 text-gray-700 font-medium rounded-xl transition-all duration-300;
+  @apply relative hover:text-[#fcaf0b] hover:bg-[#fcaf0b]/20;
+  @apply after:absolute after:bottom-0 after:left-0 after:w-0 after:h-0.5;
+  @apply after:bg-[#fcaf0b] after:transition-all after:duration-300 after:rounded-full;
+  @apply flex items-center justify-center;
+}
+
+.navbar-link:hover::after {
+  @apply w-full;
+}
+
+.navbar-link-active {
+  @apply text-[#fcaf0b];
+}
+
+.navbar-link-active::after {
+  @apply w-full;
+}
+
+.navbar-menu-button {
+  @apply md:hidden flex flex-col items-center justify-center w-10 h-10;
+  @apply text-gray-700 hover:text-[#fcaf0b] transition-colors duration-300;
+  @apply focus:outline-none focus:ring-2 focus:ring-[#fcaf0b] focus:ring-offset-2 focus:ring-offset-transparent rounded-xl;
+}
+
+.navbar-menu-icon {
+  @apply w-6 h-5 flex flex-col justify-between;
+}
+
+.navbar-menu-icon span {
+  @apply block h-0.5 w-full bg-current rounded transition-all duration-300 origin-center;
+}
+
+.navbar-menu-icon-open span:nth-child(1) {
+  @apply rotate-45 translate-y-2;
+}
+
+.navbar-menu-icon-open span:nth-child(2) {
+  @apply opacity-0;
+}
+
+.navbar-menu-icon-open span:nth-child(3) {
+  @apply -rotate-45 -translate-y-2;
+}
+
+.navbar-menu-mobile {
+  @apply md:hidden absolute top-16 left-1/2 -translate-x-1/2 w-fit min-w-[200px];
+  @apply bg-gradient-to-r from-[#fcaf0b]/10 via-[#fcaf0b]/15 to-[#fcaf0b]/10;
+  @apply backdrop-blur-md border border-[#fcaf0b]/20;
+  @apply rounded-3xl shadow-lg max-h-0 overflow-hidden transition-all duration-300;
+}
+
+.navbar-menu-mobile-open {
+  @apply max-h-96 pb-4;
+}
+
+.navbar-link-mobile {
+  @apply block px-6 py-3 text-gray-700 font-medium transition-all duration-300;
+  @apply hover:text-[#fcaf0b] hover:bg-[#fcaf0b]/20;
+  @apply border-l-4 border-transparent first:rounded-t-3xl last:rounded-b-3xl;
+}
+
+.navbar-link-mobile:hover {
+  @apply border-[#fcaf0b] bg-[#fcaf0b]/20;
+}
+
+.navbar-link-mobile.navbar-link-active {
+  @apply text-[#fcaf0b] border-[#fcaf0b];
+}

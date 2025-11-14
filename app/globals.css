@@ -12,6 +12,7 @@
   @apply backdrop-blur-md border border-[#fcaf0b]/20;
   @apply rounded-3xl shadow-lg;
   @apply relative;
+  @apply max-md:hidden;
 }
 
 .navbar-logo {
@@ -44,12 +45,6 @@
   @apply w-full;
 }
 
-.navbar-menu-button {
-  @apply md:hidden flex flex-col items-center justify-center w-10 h-10;
-  @apply text-gray-700 hover:text-[#fcaf0b] transition-colors duration-300;
-  @apply focus:outline-none focus:ring-2 focus:ring-[#fcaf0b] focus:ring-offset-2 focus:ring-offset-transparent rounded-xl;
-}
-
 .navbar-menu-icon {
   @apply w-6 h-5 flex flex-col justify-between;
 }
@@ -68,13 +63,6 @@
 
 .navbar-menu-icon-open span:nth-child(3) {
   @apply -rotate-45 -translate-y-2;
-}
-
-.navbar-menu-mobile {
-  @apply md:hidden absolute top-16 left-1/2 -translate-x-1/2 w-fit min-w-[200px];
-  @apply bg-gradient-to-r from-[#fcaf0b]/10 via-[#fcaf0b]/15 to-[#fcaf0b]/10;
-  @apply backdrop-blur-md border border-[#fcaf0b]/20;
-  @apply rounded-3xl shadow-lg max-h-0 overflow-hidden transition-all duration-300;
 }
 
 .navbar-menu-mobile-open {

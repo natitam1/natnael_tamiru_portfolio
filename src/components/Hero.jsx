@@ -72,7 +72,7 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative min-h-screen md:mt-5 mt-4 bg-white text-black flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6"
+      className="relative min-h-screen md:mt-7 mt-4 bg-white text-black flex flex-col items-center justify-center overflow-hidden px-4 sm:px-6"
     >
       {/* Profile Image */}
       <motion.img

@@ -6,7 +6,7 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
 
   const links = [
-    { name: "Home", to: "home", icon: <FiHome size={16} /> }, // <-- change '#' to 'home'
+    { name: "Home", to: "home", icon: <FiHome size={16} /> },
     { name: "About", to: "about", icon: <FiUser size={16} /> },
     { name: "Skills", to: "skills", icon: <FiCode size={16} /> },
     { name: "Projects", to: "projects", icon: <FiBriefcase size={16} /> },

@@ -40,9 +40,9 @@ export default function Contact() {
     },
     {
       title: "Telegram",
-      detail: "@natnaeltamiru",
+      detail: "@natitam1",
       icon: <FaTelegramPlane size={28} />,
-      link: "https://t.me/natnaeltamiru",
+      link: "https://t.me/natitam1",
     },
     {
       title: "LeetCode",

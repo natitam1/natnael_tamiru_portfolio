@@ -109,7 +109,7 @@ const Hero = () => {
         </Link>
 
         <a
-          href="/resume.pdf"
+          href="/resume (2).pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="flex-1"

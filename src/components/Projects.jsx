@@ -3,6 +3,7 @@ import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
 import QuickImg from "../assets/quick.png";
 import WormImg from "../assets/worm2.jpg";
+import dj1 from "../assets/dj1.png";
 
 export default function Projects() {
   const projects = [
@@ -38,6 +39,15 @@ export default function Projects() {
       ],
       github: "https://github.com/natitam1/QuickBlog-Natnael",
       image: WormImg,
+    },
+    {
+      title: "Little Lemon Restaurant Website",
+      description:
+        "A full-stack restaurant website for Little Lemon, a family-owned Mediterranean restaurant in Chicago, showcasing seasonal menus, special offers, table booking, and opening hours. The site features a modern design with sections for Home, About, Menu, and Booking.",
+      tech: ["Django", "HTML", "CSS", "JavaScript"],
+      live: "https://littlelemon-1-57ni.onrender.com/home/",
+      github: "https://github.com/natitam1/littlelemon",
+      image: dj1,
     },
   ];
 
